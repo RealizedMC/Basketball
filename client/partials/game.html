@@ -1,0 +1,29 @@
+<div ng-controller="GameController">
+	<div id="container">
+		<div id="throwing_power">
+			<div id="power_bar"></div>
+		</div>
+		<div id="template">
+			<h1>Basketball</h1>
+			<div id="sky">
+			</div>
+			<div id="ground"></div>
+		</div>
+		<div id="scoreboard">
+			<table id="scores">
+				<tr>
+					<th>Name</th>
+					<th>Score</th>
+				</tr>
+			</table>
+		</div>
+		<div id="chat">
+			<form ng-submit="send_message()">
+				<input type="text" name="message" ng-model="new_message.message" id="message" placeholder="Type a message...">
+			</form>
+			<div id="messages">
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</div>
+</div>
